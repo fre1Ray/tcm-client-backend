@@ -13,6 +13,55 @@
   updatedAt,
   status
 FROM ctm_store
-where id=#{id}
+where id=#{id} and status=1
 </select>
+
+    <select id="getStore" resultType="Store" parameterType="Store">
+        select
+        id,
+        address,
+        phone,
+        storeName,
+        createdAt,
+        updatedAt,
+        status
+        from ctm_store
+        <where>
+            <if test="id!=null">id=#{id}</if>
+            <if test="address !=null and address!=''">address like concat('%',#{address},'%')</if>
+            <if test="phone !=null and phone!=''">phone = #{phone}</if>
+            <if test="storeName !=null and storeName!=''">storeName like concat('%',#{storeName},'%')</if>
+            <if test="createdAt !=null ">createdAt = #{createdAt}</if>
+            <if test="updatedAt !=null ">updatedAt = #{updatedAt}</if>
+            <if test="status !=null ">status = #{status}</if>
+        </where>
+    </select>
+
+    <insert id="addStore" parameterType="Store" keyProperty="id" useGeneratedKeys="true">
+        insert into ctm_store(address,
+        phone,
+        storeName,
+        createdAt,
+        updatedAt,
+        status) values(#{address},#{phone},#{storeName},now(),now(),#{status})
+    </insert>
+
+    <!--修改-->
+    <update id="updateStoreInfo" parameterType="Store">
+        update ctm_store
+        <set>
+            <if test="address !=null and address!=''">address like concat('%',#{address},'%')</if>
+            <if test="phone !=null and phone!=''">phone = #{phone}</if>
+            <if test="storeName !=null and storeName!=''">storeName like concat('%',#{storeName},'%')</if>
+            <if test="status !=null ">status = #{status}</if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--删除-->
+    <update id="deleteStore" parameterType="int">
+        update ctm_store
+        set status=0 where id=#{id}
+    </update>
+
 </mapper>
