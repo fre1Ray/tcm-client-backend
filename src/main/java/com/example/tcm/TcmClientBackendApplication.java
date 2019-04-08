@@ -1,6 +1,7 @@
 package com.example.tcm;
 
 import org.mybatis.spring.annotation.MapperScan;
+<<<<<<< HEAD
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,17 @@ import java.util.Properties;
 
 @EnableTransactionManagement//开启事务管理
 @MapperScan("com.example.tcm.dao")
+=======
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@EnableTransactionManagement//开启事务管理
+>>>>>>> remotes/origin/dev-int-spring1-xgq
 @SpringBootApplication
+@ComponentScan("com.example.tcm")//扫描注解元素
+@MapperScan("com.example.tcm.dao")//Mybatis的DAO所在包
 public class TcmClientBackendApplication {
 
     public static void main(String[] args) {

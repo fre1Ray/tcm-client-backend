@@ -21,9 +21,18 @@
 
 	<dependencies>
 		<dependency>
+<<<<<<< HEAD
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+=======
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+>>>>>>> remotes/origin/dev-int-spring1-xgq
 		</dependency>
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
@@ -61,6 +70,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--使用jsp页面-->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -80,7 +104,12 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<includes>
+<<<<<<< HEAD
 					<include>**/*.*</include>
+=======
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+>>>>>>> remotes/origin/dev-int-spring1-xgq
 				</includes>
 			</resource>
 		</resources>
