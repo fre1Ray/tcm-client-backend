@@ -13,9 +13,12 @@
       <module name="tcm-client-backend" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+<<<<<<< HEAD
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="tcm-client-backend" options="-parameters" />
     </option>
   </component>
+=======
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 </project>

@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: io.lettuce:lettuce-core:5.1.4.RELEASE">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://D:/apache/maven-repository/io/lettuce/lettuce-core/5.1.4.RELEASE/lettuce-core-5.1.4.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://D:/apache/maven-repository/io/lettuce/lettuce-core/5.1.4.RELEASE/lettuce-core-5.1.4.RELEASE-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.4.RELEASE/lettuce-core-5.1.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.4.RELEASE/lettuce-core-5.1.4.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.4.RELEASE/lettuce-core-5.1.4.RELEASE-sources.jar!/" />
+>>>>>>> remotes/origin/dev-int-spring1-hjy
     </SOURCES>
   </library>
 </component>

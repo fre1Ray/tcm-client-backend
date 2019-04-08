@@ -12,7 +12,10 @@
 	<artifactId>tcm-client-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tcm-client-backend</name>
+<<<<<<< HEAD
 	<packaging>war</packaging>
+=======
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,6 +24,7 @@
 
 	<dependencies>
 		<dependency>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
@@ -38,6 +42,16 @@
 			<!--<groupId>org.springframework.boot</groupId>-->
 			<!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
 		<!--</dependency>-->
+=======
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.10</version>
+		</dependency>
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -47,17 +61,22 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.0.0</version>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 			<version>1.5.14.RELEASE</version>
 		</dependency>
+=======
+
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
@@ -66,10 +85,13 @@
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 		<dependency>
+=======
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<!--使用jsp页面-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -85,6 +107,8 @@
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.2.3</version>
 		</dependency>
+=======
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 	</dependencies>
 
 	<build>
@@ -94,6 +118,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+<<<<<<< HEAD
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -113,6 +138,8 @@
 				</includes>
 			</resource>
 		</resources>
+=======
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 	</build>
 
 </project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.tcm.dao.CommodityDAO">
+    <!--Commodity getCommodityById(Integer id);-->
+<select id="getCommodityById" parameterType="Integer" resultType="Commodity">
+SELECT id,comName,storeId,comIn,comOut,createdAt,updatedAt FROM ctm_commodity WHERE id=#{id}
+</select>
+    <!--List<Commodity> getAllCommodity(Commodity commodity);-->
+<select id="getAllCommodity" parameterType="Commodity" resultType="Commodity">
+    SELECT id,comName,storeId,comIn,comOut,createdAt,updatedAt FROM ctm_commodity
+    <where>
+        <if test="comName!=null and comName!''"> and comName=#{comName}</if>
+        <if test="storeId!=null"> and storeId=#{storeId}</if>
+        <if test="comIn!=null"> and comIn=#{comIn}</if>
+        <if test="comOut!=null"> and comOut=#{comOut}</if>
+        <if test="createdAt!=null"> and createdAt=#{createdAt}</if>
+        <if test="updatedAt!=null"> and updatedAt=#{updatedAt}</if>
+    </where>
+</select>
+    <!--void addCommodity(Commodity commodity);-->
+<insert id="addCommodity" parameterType="Commodity">
+    INSERT INTO ctm_commodity(comName,storeId,comIn,comOut,createdAt,updatedAt)
+    VALUES (comName,storeId,comIn,comOut,createdAt,updatedAt)
+</insert>
+    <!--void updateCommodity(Commodity commodity);-->
+<update id="updateCommodity" parameterType="Commodity">
+    UPDATE ctm_commodity
+    <set>
+        <if test="comName!=null and comName!''"> comName=#{comName},</if>
+        <if test="storeId!=null"> storeId=#{storeId},</if>
+        <if test="comIn!=null"> comIn=#{comIn},</if>
+        <if test="comOut!=null"> comOut=#{comOut},</if>
+        <if test="createdAt!=null"> createdAt=#{createdAt},</if>
+        <if test="updatedAt!=null"> updatedAt=#{updatedAt},</if>
+    </set>
+</update>
+    <!--void deleteCommodity(Integer id);-->
+<delete id="deleteCommodity" parameterType="Integer">
+    DELETE FROM ctm_commodity WHERE id=#{id}
+</delete>
+
+</mapper>

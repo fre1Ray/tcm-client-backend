@@ -1,5 +1,6 @@
 package com.example.tcm;
 
+<<<<<<< HEAD
 import org.mybatis.spring.annotation.MapperScan;
 <<<<<<< HEAD
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
@@ -54,4 +55,16 @@ public class TcmClientBackendApplication {
         advisor.setAdvice(txAdvice);
         return advisor;
     }
+=======
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TcmClientBackendApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TcmClientBackendApplication.class, args);
+	}
+
+>>>>>>> remotes/origin/dev-int-spring1-hjy
 }
