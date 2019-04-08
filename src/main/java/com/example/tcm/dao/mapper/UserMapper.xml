@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.tcm.dao.UserDAO">
+
+    <select id="getUserByUsername" parameterType="String" resultType="User">
+        select id, account, email, password, type, status, createdAt, updatedAt, actionTime, parentId
+        from ctm_user
+        <where>
+            <if test="_parameter!=nul and _parameter!=''">
+                account=#{_parameter} or email=#{_parameter}
+            </if>
+        </where>
+    </select>
+
+    <select id="getAllBUserByParentId" parameterType="int">
+        select id, account, email, password, type, status, createdAt, updatedAt, actionTime, parentId
+        from ctm_user
+        where parentId=#{_parameter}
+    </select>
+
+    <insert id="addBUserBy" parameterType="User">
+        insert into ctm_user(account, email, password, type, status, createdAt, updatedAt, actionTime, parentId)
+        values (#{account},#{email},#{password},2,1,now(),now(),now(),#{parentId})
+    </insert>
+
+   <update id="deleteBUserBy" parameterType="int">
+       update ctm_user set status=0
+       where id=#{userId}
+   </update>
+
+    <update id="updateBPassword" parameterType="User">
+        update ctm_user set password=#{password}
+        where id=#{id}
+    </update>
+</mapper>
