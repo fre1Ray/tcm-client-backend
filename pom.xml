@@ -44,6 +44,10 @@
 		<!--</dependency>-->
 =======
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 		<dependency>
@@ -73,7 +77,6 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 <<<<<<< HEAD
@@ -92,6 +95,9 @@
 			<scope>test</scope>
 		</dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 		<!--使用jsp页面-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -107,8 +113,11 @@
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.2.3</version>
 		</dependency>
+<<<<<<< HEAD
 =======
 >>>>>>> remotes/origin/dev-int-spring1-hjy
+=======
+>>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 	</dependencies>
 
 	<build>
@@ -119,6 +128,9 @@
 			</plugin>
 		</plugins>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -130,6 +142,7 @@
 				<directory>src/main/resources</directory>
 				<includes>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<include>**/*.*</include>
 =======
 					<include>**/*.xml</include>
@@ -140,6 +153,15 @@
 		</resources>
 =======
 >>>>>>> remotes/origin/dev-int-spring1-hjy
+=======
+					<include>**/*.xml</include>
+					<include>**/*.yml</include>
+					<include>**/*.html</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+>>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 	</build>
 
 </project>
