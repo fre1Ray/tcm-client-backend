@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/tcm-client-backend.iml" filepath="$PROJECT_DIR$/.idea/tcm-client-backend.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/tcm-client-backend.iml" filepath="$PROJECT_DIR$/tcm-client-backend.iml" />
->>>>>>> remotes/origin/dev-int-spring1-hjy
-=======
-      <module fileurl="file://$PROJECT_DIR$/tcm-client-backend.iml" filepath="$PROJECT_DIR$/tcm-client-backend.iml" />
->>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
     </modules>
   </component>
 </project>

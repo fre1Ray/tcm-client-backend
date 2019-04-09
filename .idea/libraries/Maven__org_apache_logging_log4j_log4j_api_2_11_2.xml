@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.logging.log4j:log4j-api:2.11.2">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://D:/apache/maven-repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://D:/apache/maven-repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2-sources.jar!/" />
-=======
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2-sources.jar!/" />
->>>>>>> remotes/origin/dev-int-spring1-hjy
     </SOURCES>
   </library>
 </component>

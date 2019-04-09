@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://D:/apache/maven-repository/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://D:/apache/maven-repository/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/" />
-=======
-      <root url="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/" />
->>>>>>> remotes/origin/dev-int-spring1-hjy
     </SOURCES>
   </library>
 </component>

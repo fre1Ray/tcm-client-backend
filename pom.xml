@@ -12,10 +12,8 @@
 	<artifactId>tcm-client-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tcm-client-backend</name>
-<<<<<<< HEAD
 	<packaging>war</packaging>
-=======
->>>>>>> remotes/origin/dev-int-spring1-hjy
+
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -24,25 +22,23 @@
 
 	<dependencies>
 		<dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-=======
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
->>>>>>> remotes/origin/dev-int-spring1-xgq
 		</dependency>
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
 			<!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
 		<!--</dependency>-->
-=======
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
@@ -50,12 +46,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>1.2.10</version>
-		</dependency>
->>>>>>> remotes/origin/dev-int-spring1-hjy
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -65,21 +55,11 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.0.0</version>
 		</dependency>
-<<<<<<< HEAD
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-			<version>1.5.14.RELEASE</version>
-		</dependency>
-=======
-
->>>>>>> remotes/origin/dev-int-spring1-hjy
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
@@ -87,17 +67,6 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
-		<dependency>
-=======
->>>>>>> remotes/origin/dev-int-spring1-hjy
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 		<!--使用jsp页面-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -113,24 +82,22 @@
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.2.3</version>
 		</dependency>
-<<<<<<< HEAD
-=======
->>>>>>> remotes/origin/dev-int-spring1-hjy
-=======
->>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 	</dependencies>
 
 	<build>
 		<plugins>
 			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -141,19 +108,8 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<includes>
-<<<<<<< HEAD
-<<<<<<< HEAD
 					<include>**/*.*</include>
-=======
-					<include>**/*.xml</include>
 					<include>**/*.properties</include>
->>>>>>> remotes/origin/dev-int-spring1-xgq
-				</includes>
-			</resource>
-		</resources>
-=======
->>>>>>> remotes/origin/dev-int-spring1-hjy
-=======
 					<include>**/*.xml</include>
 					<include>**/*.yml</include>
 					<include>**/*.html</include>
@@ -161,7 +117,5 @@
 				</includes>
 			</resource>
 		</resources>
->>>>>>> remotes/origin/dev-int-sprint1-xiaoqiang
 	</build>
-
 </project>
